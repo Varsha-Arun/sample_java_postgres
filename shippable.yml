@@ -1,9 +1,12 @@
 language: java
-
+build_image: drydock/u14rubpls:tip
+services:
+   - postgres
 jdk:
    - oraclejdk7
    - openjdk6
    - openjdk7
+   - oraclejdk8
 script:
    - gradle clean build
    - gradle test
