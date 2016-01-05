@@ -1,13 +1,13 @@
 language: java
-
+buils_image: drydock/u12javpls:tip
 jdk:
    - oraclejdk7
    - openjdk6
    - openjdk7
+   - oraclejdk7
 script:
    - gradle clean build
    - gradle test
    - gradle cobertura
 notifications:
   email: false
-
